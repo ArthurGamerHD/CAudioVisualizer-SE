@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d77fa356-22a2-47cc-a148-d8926bf92de3</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)GeneratedTextureInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PublishedGeneratedTexture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SpaceEngineersGeneratedTextureAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SpaceEngineersVisualizerHost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualizerHostOptions.cs" />
+  </ItemGroup>
+</Project>

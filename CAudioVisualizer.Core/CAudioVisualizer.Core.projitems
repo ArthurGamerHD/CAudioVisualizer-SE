@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0f3a2ef5-c6cb-4a51-a91f-412be4e7a96a</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AudioVisualizerCore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AudioVisualizerFlags.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AudioVisualizerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AudioVisualizerOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BackgroundRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CircleVisualizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Color3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomShaderVisualizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DebugInfoVisualizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HannWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PcmRingBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PostProcessingRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Radix2Fft.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SoftwareRasterizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SpectrumVisualizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TimeColorHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TriangleVisualizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualizerInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualizerManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WaveformVisualizer.cs" />
+  </ItemGroup>
+</Project>
